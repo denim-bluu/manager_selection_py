@@ -5,9 +5,15 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "joblib>=1.4.2",
     "numpy>=2.2.2",
     "pandas>=2.2.3",
     "pydantic>=2.10.6",
     "scipy>=1.15.1",
     "statsmodels>=0.14.4",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "ptpython>=3.0.29",
 ]
