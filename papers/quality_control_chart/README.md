@@ -11,9 +11,7 @@ The baseline assumption is that the manager has no skills, meaning their expecte
 
 **Value-Added Return Calculation:**  
 The chart tracks the cumulative annualised excess return of the manager over a benchmark. The formula is:
-$$
-\text{Excess Return} = R_{\text{Portfolio}} - R_{\text{Benchmark}}
-$$  
+$$ \text{Excess Return} = R_{\text{Portfolio}} - R_{\text{Benchmark}} $$
 This metric is plotted over time to visualise persistent outperformance or underperformance.
 
 **Confidence Band Construction:**  
