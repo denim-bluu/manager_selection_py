@@ -15,7 +15,7 @@
 4. **Bootstrap**
    - **H0 Null Hypothesis**: True $\alpha = 0$ (no skill).
    - **Pseudo Returns**:
-      $$ r_t^{\text{pseudo}} = \hat{\beta}\text{Factors} + \epsilon_t^{\text{resampled}} $$
+      $$r_t^{\text{pseudo}} = \hat{\beta}\text{Factors} + \epsilon_t^{\text{resampled}}$$
    - Resample residuals **with replacement** (use block-bootstrapping if residuals show autocorrelation, in the paper they found no significant difference in terms of results between block and standard bootstrapping)
 
 5. **Simulation Process**
@@ -27,8 +27,8 @@
 
 6. **Statistical Inference**
    - **p-value**:
-      $$ p_{\text{alpha}} = \frac{\text{Number of } \alpha^*_b \geq \alpha_{\text{actual}} + 1}{B + 1} $$
-      $$ p_{\text{t-stat}} = \frac{\text{Number of } t_{\alpha^*_b} \geq t_{\alpha_{\text{actual}}}}{B + 1} $$
+      $$p_{\text{alpha}} = \frac{\text{Number of } \alpha^*_b \geq \alpha_{\text{actual}} + 1}{B + 1}$$
+      $$p_{\text{t-stat}} = \frac{\text{Number of } t_{\alpha^*_b} \geq t_{\alpha_{\text{actual}}}}{B + 1}$$
    - **Interpretation**:
      - $p < 0.05$: Significant evidence of skill ($\alpha$ unlikely under "luck").
      - $p \geq 0.05$: Performance consistent with random chance.
