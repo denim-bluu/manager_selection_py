@@ -22,7 +22,7 @@
    For $B = 10,000$ iterations:
    - Generate pseudo returns using resampled residuals
    - Re-run the factor model on pseudo returns to estimate $\alpha^*_b$
-     - $$r_t^{\text{pseudo}} = \alpha^*_b + \beta_1^*(RMRF_t) + \beta_2^*(SMB_t) + \beta_3^*(HML_t) + \beta_4^*(PR1YR_t) + \epsilon_t^*$$
+      $$ r_t^{\text{pseudo}} = \alpha^*_b + \beta_1^*(RMRF_t) + \beta_2^*(SMB_t) + \beta_3^*(HML_t) + \beta_4^*(PR1YR_t) + \epsilon_t^* $$
    - Store all $\alpha^*_b$ values
 
 6. **Statistical Inference**
