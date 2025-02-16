@@ -22,13 +22,17 @@
    For $B = 10,000$ iterations:
    - Generate pseudo returns using resampled residuals
    - Re-run the factor model on pseudo returns to estimate $\alpha^*_b$
-   $$ r_t^{\text{pseudo}} = \alpha^*_b + \beta_1^*(RMRF_t) + \beta_2^*(SMB_t) + \beta_3^*(HML_t) + \beta_4^*(PR1YR_t) + \epsilon_t^* $$
+   
+       <p>$$r_t^{\text{pseudo}} = \alpha^*_b + \beta_1^*(RMRF_t) + \beta_2^*(SMB_t) + \beta_3^*(HML_t) + \beta_4^*(PR1YR_t) + \epsilon_t^* $$</p>
+   
    - Store all $\alpha^*_b$ values
 
 6. **Statistical Inference**
    - **p-value**:
-$$p_{\text{alpha}} = \frac{\text{Number of } \alpha^*_b \geq \alpha_{\text{actual}} + 1}{B + 1}$$
-$$p_{\text{t-stat}} = \frac{\text{Number of } t_{\alpha^*_b} \geq t_{\alpha_{\text{actual}}}}{B + 1}$$
+
+   <p>$$p_{\text{alpha}} = \frac{\text{Number of } \alpha^*_b \geq \alpha_{\text{actual}} + 1}{B + 1}$$</p>
+   $$p_{\text{t-stat}} = \frac{\text{Number of } t_{\alpha^*_b} \geq t_{\alpha_{\text{actual}}}}{B + 1}$$
+   
    - **Interpretation**:
      - $p < 0.05$: Significant evidence of skill ($\alpha$ unlikely under "luck").
      - $p \geq 0.05$: Performance consistent with random chance.
