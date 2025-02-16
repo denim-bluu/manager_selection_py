@@ -4,8 +4,7 @@
 
 1. **Model Selection**
    Use the Carhart 4-factor model (or another benchmark relevant to the fund’s strategy):
-   
-   $$ r_t - r_f = \alpha + \beta_1(RMRF_t) + \beta_2(SMB_t) + \beta_3(HML_t) + \beta_4(PR1YR_t) + \epsilon_t $$
+   $$r_t - r_f = \alpha + \beta_1(RMRF_t) + \beta_2(SMB_t) + \beta_3(HML_t) + \beta_4(PR1YR_t) + \epsilon_t$$
 
 3. **Estimate Parameters**
    - Run an OLS regression on manager's ex-post returns to obtain:
