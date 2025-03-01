@@ -69,18 +69,18 @@ if __name__ == "__main__":
 
     if result.success:
         optimal_weights = result.x
-        print(f"Initial weights: {[f'{weight:.2f}' for weight in init_w]}")
+        print(f"Expected returns: {[f'{ret:.3f}' for ret in expected_returns]}")
+        print(f"Initial weights: {[f'{weight:.3f}' for weight in init_w]}")
         print(f"Initial variance: {portfolio_variance(init_w, cov):.4f}")
         print(
             f"Initial expected portfolio return: {np.dot(init_w, expected_returns):.4f}"
         )
         print(
-            f"Initial Implied returns: {[f'{ret:.2f}' for ret in implied_returns(init_w, expected_returns, cov)]}"
+            f"Initial Implied returns: {[f'{ret:.3f}' for ret in implied_returns(init_w, expected_returns, cov)]}"
         )
-        print(f"Optimal weights: {[f'{weight:.2f}' for weight in optimal_weights]}")
+        print(f"Optimal weights: {[f'{weight:.3f}' for weight in optimal_weights]}")
         r_imp_opt = implied_returns(optimal_weights, expected_returns, cov)
-        print(f"Expected returns: {[f'{ret:.2f}' for ret in expected_returns]}")
-        print(f"Implied returns: {[f'{ret:.2f}' for ret in r_imp_opt]}")
+        print(f"Updated Implied returns: {[f'{ret:.3f}' for ret in r_imp_opt]}")
         print(f"Optimised variance: {portfolio_variance(optimal_weights, cov):.4f}")
         print(
             f"Optimised expected portfolio return: {np.dot(optimal_weights, expected_returns):.4f}"

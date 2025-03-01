@@ -120,3 +120,18 @@ This framework is grounded in fundamental economic principles of marginal analys
 The optimisation seeks to equate the marginal benefit with the marginal cost for each strategy. If a strategy’s expected return exceeds its risk-implied return, it indicates that the incremental benefit of investing in that strategy outweighs the additional risk—suggesting that its allocation should be increased. Conversely, if the expected return is below the risk-implied return, the allocation should be reduced.
 
 This approach not only ensures that every unit of risk taken is adequately compensated by the corresponding expected return, but it also provides a systematic method for dynamically adjusting portfolio weights in response to changing market conditions. In other words, by aligning marginal return with marginal cost, the portfolio remains efficient, well-diversified, and optimally positioned to achieve its risk-return objectives.
+
+## Example Code Output
+
+```text
+Expected returns: ['0.080', '0.040', '0.070']
+Initial weights: ['0.600', '0.250', '0.150']
+Initial variance: 0.0142
+Initial expected portfolio return: 0.0685
+Initial Implied returns: ['0.103', '0.006', '0.034']
+
+Optimal weights: ['0.577', '0.000', '0.423']
+Updated Implied returns: ['0.103', '0.004', '0.038']
+Optimised variance: 0.0168
+Optimised expected portfolio return: 0.0758
+```
