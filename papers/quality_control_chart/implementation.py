@@ -1,6 +1,7 @@
+from typing import Tuple
+
 import numpy as np
 import plotly.graph_objects as go
-from typing import Tuple
 
 
 class QualityControlChart:

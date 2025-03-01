@@ -1,11 +1,12 @@
-from functools import partial
 import time
+from functools import partial
+
 import numpy as np
+import pandas as pd
 import statsmodels.api as sm
-from statsmodels.regression.linear_model import OLS
 from joblib import Parallel, delayed
 from pydantic import BaseModel
-import pandas as pd
+from statsmodels.regression.linear_model import OLS
 
 
 def simulate_fund_data(n_months: int = 120, seed: int = 42):

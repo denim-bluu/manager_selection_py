@@ -1,6 +1,6 @@
 import numpy as np
-from scipy.optimize import minimize
 from numpy import typing as npt
+from scipy.optimize import minimize
 
 
 def portfolio_variance(w: npt.NDArray, cov: npt.NDArray) -> float:
